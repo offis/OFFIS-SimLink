@@ -1,5 +1,5 @@
-**-----------------------------------------------------------------------
-Copyright (c) 2010     OFFIS Institute for Information Technology,     
+-----------------------------------------------------------------------
+**Copyright (c) 2010     OFFIS Institute for Information Technology,     
                        26121 Oldenburg, Germany                        
                                                                        
 All rights reserved.                                                   
