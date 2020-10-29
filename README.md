@@ -1,4 +1,3 @@
-** -----------------------------------------------------------------------**
 ** Copyright (c) 2010     OFFIS Institute for Information Technology,     **
 **                        26121 Oldenburg, Germany                        **
 **                                                                        **
@@ -19,7 +18,6 @@
 ** AUTHORS file.  For detailed copyright information, please refer        **
 ** to the COPYING file.                                                   **
 **                                                                        **
-** -----------------------------------------------------------------------**
 ** Contact information:                                                   **
 **  OFFIS                                                                 **
 **    Institute for Information Technology                                **
@@ -30,7 +28,6 @@
 **  www  : http://www.offis.de/                                           **
 **  phone: +49 (441) 9722-230                                             **
 **  fax  : +49 (441) 9722-128                                             **
-** -----------------------------------------------------------------------**
 
 # OFFIS SimLink: Open Virtual Platform - Matlab/Simulink co-simulation
 
