@@ -11,13 +11,12 @@ The development of personal computer SW is a task that can be completely handled
 
 # Technology
 
-[[https://github.com/offis/OFFIS-SimLink/blob/master/images/Fig01_virtual_prototype_in_the_loop_simulation.png|Virtual prototype in the loop simulation]]
+![picture1](https://github.com/offis/OFFIS-SimLink/blob/master/images/Fig01_virtual_prototype_in_the_loop_simulation.png)
 _**Figure 1: Virtual prototype in the loop simulation.**_
 
 The implementation we present enables a methodology called virtual platform in the loop simulation (Figure 1), which is an intermediate step towards hardware in the loop simulation. The challenge is here to synchronize two independent simulations so that the simulated time does not diverge and data can be exchanged at the right instant of time. OffisSimLink is a bus peripheral model for the commercial [Open Virtual Platform](https://www.ovpworld.org/) which enables simulating embedded systems running real application code. Attached to the simulated bus of an instruction set simulator it enables the exchange of data with a [Matlab/Simulink](https://de.mathworks.com/) model via memory mapped IO. Figure 2 depicts the architecture of the implementation.
 
-[[https://github.com/offis/OFFIS-SimLink/blob/master/images/Fig02_ovp-simulink_co-simulation_architecture.png|OVP-Simulink co-simulation architecture]]
-
+![picture1](https://github.com/offis/OFFIS-SimLink/blob/master/images/Fig02_ovp-simulink_co-simulation_architecture.png)
 _**Figure 2: OVP-Simulink co-simulation architecture.**_
 
 OVP and Matlab/Simulink are executed in parallel on a Host PC. This can either be one or two individual machines connected via network. OffisSimLink occupies address space in the OVP simulated system on chip. Any read/write transaction to this address space on the bus is forwarded to Matlab/Simulink using Mathworks engine.h API which was used to implement a semihost.dll for data exchange. Both simulations run in parallel and synchronize every defined time period. Matlab/Simulink automatically STOPs when it reaches a synchronization point and will be continued by OffisSimLink after synchronization. The advantage of this synchronization scheme is the full parallel execution of both simulators which delivers best simulation performance in comparison to a mutual exclusive approach. The disadvantage is a loss in simulation accuracy since changes in one of the simulations will be available in the other only every synchronization interval. Since this interval is configurable the disadvantage can be minimized to a tolerable influence on the simulation results depending on the simulation use case.
