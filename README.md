@@ -1,36 +1,36 @@
-# -----------------------------------------------------------------------
-# Copyright (c) 2010     OFFIS Institute for Information Technology,
-#                        26121 Oldenburg, Germany
-# 
-# All rights reserved.
-# 
-# This file is directly or indirectly part of the OFFIS Virtual Platform.
-# A simualtion of an ARM7tdmi micro processor with OVP (a), FreeRTOS
-# operating system (b) and user defined tasks.
-# 
-# (a) http://www.ovpworld.org/
-# (b) http://www.freertos.org/
-# 
-# Created for the European projects: Nephron+ (1)
-# 
-# 1) http://www.nephronplus.eu/
-# 
-# A list of authors and contributors can be found in the accompanying
-# AUTHORS file.  For detailed copyright information, please refer
-# to the COPYING file.
-# 
-# -----------------------------------------------------------------------
-# Contact information:
-#  OFFIS
-#    Institute for Information Technology
-#  Dipl.-Inform. Frank Poppen
-#    Escherweg 2
-#    D-26121 Oldenburg
-#    Germany
-#  www  : http://www.offis.de/
-#  phone: +49 (441) 9722-230
-#  fax  : +49 (441) 9722-128
-# -----------------------------------------------------------------------
+-----------------------------------------------------------------------
+Copyright (c) 2010     OFFIS Institute for Information Technology,
+                       26121 Oldenburg, Germany
+
+All rights reserved.
+
+This file is directly or indirectly part of the OFFIS Virtual Platform.
+A simualtion of an ARM7tdmi micro processor with OVP (a), FreeRTOS
+operating system (b) and user defined tasks.
+
+(a) http://www.ovpworld.org/
+(b) http://www.freertos.org/
+
+Created for the European projects: Nephron+ (1)
+
+1) http://www.nephronplus.eu/
+
+A list of authors and contributors can be found in the accompanying
+AUTHORS file.  For detailed copyright information, please refer
+to the COPYING file.
+
+-----------------------------------------------------------------------
+Contact information:
+ OFFIS
+   Institute for Information Technology
+ Dipl.-Inform. Frank Poppen
+   Escherweg 2
+   D-26121 Oldenburg
+   Germany
+ www  : http://www.offis.de/
+ phone: +49 (441) 9722-230
+ fax  : +49 (441) 9722-128
+-----------------------------------------------------------------------
 
 The following information is a copy & paste from the OFFIS website
 http://system-synthesis.org/offissimlink
@@ -44,7 +44,7 @@ additional figures included.
 
 ===== Introduction =====
 
-The development of personal computer SW is a task that can be completely handled on a PC. For embedded systems there is a different story to tell. Embedded SW is not developed on the embedded system itself. A PC and a cross-compiler are required. To execute the program it needs to be downloaded to the embedded system first and this is where evaluation and verification can become laborious. ¡°Embedded¡± means that these systems are part of a bigger maybe very complex environment that they should monitor and control. During verification and validation (debugging) it can be impossible to control the environment in such a way that repeatable regression tests are observable and thereby can be debugged.
+The development of personal computer SW is a task that can be completely handled on a PC. For embedded systems there is a different story to tell. Embedded SW is not developed on the embedded system itself. A PC and a cross-compiler are required. To execute the program it needs to be downloaded to the embedded system first and this is where evaluation and verification can become laborious. Â¡Â°EmbeddedÂ¡Â± means that these systems are part of a bigger maybe very complex environment that they should monitor and control. During verification and validation (debugging) it can be impossible to control the environment in such a way that repeatable regression tests are observable and thereby can be debugged.
 OFFIS chosen strategy relies on intensive system simulations. The system and environment are implemented as a model of computation. If the abstraction of simulation is such that it is still accurate enough to depict the relevant aspects of the system, it has many advantages:
   * **Reproducible Test Scenarios** \\ A simulated system and environment is completely determined. Any situation and test can clearly be defined to allow the implementation of regression tests for best effort embedded code coverage, verification and validation.
   * **Fast Execution** \\ The virtual platform simulates about a factor of six faster than real time. A one day test scenario can thereby be evaluated within four hours of computation time. This enables to run through a wider spectrum of test cases in less time.
