@@ -1,41 +1,35 @@
-Copyright (c) 2010     OFFIS Institute for Information Technology,
+**Copyright (c) 2010     OFFIS Institute for Information Technology,
                        26121 Oldenburg, Germany
 
-All rights reserved.
+**All rights reserved.
 
-This file is directly or indirectly part of the OFFIS Virtual Platform.
-A simualtion of an ARM7tdmi micro processor with OVP (a), FreeRTOS
+**This file is directly or indirectly part of the OFFIS Virtual Platform.
+**A simualtion of an ARM7tdmi micro processor with OVP (a), FreeRTOS
 operating system (b) and user defined tasks.
 
-(a) http://www.ovpworld.org/
-(b) http://www.freertos.org/
+**(a) http://www.ovpworld.org/
+**(b) http://www.freertos.org/
 
-Created for the European projects: Nephron+ (1)
+**Created for the European projects: Nephron+ (1)
 
-1) http://www.nephronplus.eu/
+**1) http://www.nephronplus.eu/
 
-A list of authors and contributors can be found in the accompanying
+**A list of authors and contributors can be found in the accompanying
 AUTHORS file.  For detailed copyright information, please refer
 to the COPYING file.
 
-Contact information:
- OFFIS
-   Institute for Information Technology
- Dipl.-Inform. Frank Poppen
-   Escherweg 2
-   D-26121 Oldenburg
-   Germany
- www  : http://www.offis.de/
- phone: +49 (441) 9722-230
- fax  : +49 (441) 9722-128
+**Contact information:
+** OFFIS
+**   Institute for Information Technology
+** Dipl.-Inform. Frank Poppen
+**   Escherweg 2
+**   D-26121 Oldenburg
+**   Germany
+** www  : http://www.offis.de/
+** phone: +49 (441) 9722-230
+** fax  : +49 (441) 9722-128
 
-The following information is a copy & paste from the OFFIS website
-http://system-synthesis.org/offissimlink
-
-For ease of reading we suggest you refer to that page to have also some 
-additional figures included.
-
-# OFFIS SimLink: Open Virtual Platform - Matlab/Simulink co-simulation ======
+# OFFIS SimLink: Open Virtual Platform - Matlab/Simulink co-simulation
 
 # Introduction
 
