@@ -1,4 +1,3 @@
------------------------------------------------------------------------
 Copyright (c) 2010     OFFIS Institute for Information Technology,
                        26121 Oldenburg, Germany
 
@@ -19,7 +18,6 @@ A list of authors and contributors can be found in the accompanying
 AUTHORS file.  For detailed copyright information, please refer
 to the COPYING file.
 
------------------------------------------------------------------------
 Contact information:
  OFFIS
    Institute for Information Technology
@@ -30,7 +28,6 @@ Contact information:
  www  : http://www.offis.de/
  phone: +49 (441) 9722-230
  fax  : +49 (441) 9722-128
------------------------------------------------------------------------
 
 The following information is a copy & paste from the OFFIS website
 http://system-synthesis.org/offissimlink
@@ -38,9 +35,9 @@ http://system-synthesis.org/offissimlink
 For ease of reading we suggest you refer to that page to have also some 
 additional figures included.
 
-====== OFFIS SimLink: Open Virtual Platform - Matlab/Simulink co-simulation ======
+# OFFIS SimLink: Open Virtual Platform - Matlab/Simulink co-simulation ======
 
-===== Introduction =====
+## Introduction
 
 The development of personal computer SW is a task that can be completely handled on a PC. For embedded systems there is a different story to tell. Embedded SW is not developed on the embedded system itself. A PC and a cross-compiler are required. To execute the program it needs to be downloaded to the embedded system first and this is where evaluation and verification can become laborious. ¡°Embedded¡± means that these systems are part of a bigger maybe very complex environment that they should monitor and control. During verification and validation (debugging) it can be impossible to control the environment in such a way that repeatable regression tests are observable and thereby can be debugged.
 OFFIS chosen strategy relies on intensive system simulations. The system and environment are implemented as a model of computation. If the abstraction of simulation is such that it is still accurate enough to depict the relevant aspects of the system, it has many advantages:
@@ -49,7 +46,7 @@ OFFIS chosen strategy relies on intensive system simulations. The system and env
   * **Shortening Implementation Time** \\ Instead of waiting for the hardware to be developed, manufactured and delivered first, the embedded software can be implemented by means of the virtual platform following a hardware-software co-design methodology. This enables the very early start of embedded software implementation together with system and hardware design, shortening the time period to software release.
   * **Safety** \\ The installation of unverified and unvalidated software under development can be a hazard to expensive first prototype hardware, potentially damaging it or even be a thread to personal well-being. Extensive simulation of many defined scenarios helps to find flaws and to start prototype evaluations with an already well matured software basis.
 
-===== Technology =====
+## Technology
 
 {{:virtual_prototype_in_the_loop_simulation.png?700|}}\\
 **Figure 1: Virtual prototype in the loop simulation.**
@@ -61,11 +58,11 @@ The implementation we present enables a methodology called virtual platform in t
 
 OVP and Matlab/Simulink are executed in parallel on a Host PC. This can either be one or two individual machines connected via network. OffisSimLink occupies address space in the OVP simulated system on chip. Any read/write transaction to this address space on the bus is forwarded to Matlab/Simulink using Mathworks engine.h API which was used to implement a semihost.dll for data exchange. Both simulations run in parallel and synchronize every defined time period. Matlab/Simulink automatically STOPs when it reaches a synchronization point and will be continued by OffisSimLink after synchronization. The advantage of this synchronization scheme is the full parallel execution of both simulators which delivers best simulation performance in comparison to a mutual exclusive approach. The disadvantage is a loss in simulation accuracy since changes in one of the simulations will be available in the other only every synchronization interval. Since this interval is configurable the disadvantage can be minimized to a tolerable influence on the simulation results depending on the simulation use case.
 
-===== Example =====
+## Example
 
 An example including the OffisSimLink bus peripheral model and its sources are available for download **here**. The example, as well as OffisSimLink are outcome of OFFIS research projects. The download is not to be mistaken for a product release. Its use is for publishing our concept only and supporting you with your own adaptations and development. OFFIS does not guarantee that the download will run out of the box on your system, will compile without modifications depending on your system or fulfills any standards of quality.
 
-==== System Requirements ====
+## System Requirements
 
 The downloadable sources where developed on a Windows 7 system. It is assumed that you have [[http://www.ovpworld.org/|OVP]] and [[http://www.mathworks.com|Matlab/Simulink]] installed correctly. The downloadable sources and makefiles will require (easy) modification according to your installation path and versions of these tools.
 
