@@ -1,34 +1,3 @@
-Copyright (c) 2010     OFFIS Institute for Information Technology,     
-                       26121 Oldenburg, Germany                        
-                                                                       
-All rights reserved.                                                   
-                                                                       
-This file is directly or indirectly part of the OFFIS Virtual Platform.
-A simualtion of an ARM7tdmi micro processor with OVP (a), FreeRTOS     
-operating system (b) and user defined tasks.                           
-                                                                       
-(a) http://www.ovpworld.org/                                           
-(b) http://www.freertos.org/                                           
-                                                                       
-Created for the European projects: Nephron+ (1)                        
-                                                                       
-1) http://www.nephronplus.eu/                                          
-                                                                       
-A list of authors and contributors can be found in the accompanying    
-AUTHORS file.  For detailed copyright information, please refer        
-to the COPYING file.                                                   
-                                                                       
-Contact information:                                                   
- OFFIS                                                                 
-   Institute for Information Technology                                
- Dipl.-Inform. Frank Poppen                                            
-   Escherweg 2                                                         
-   D-26121 Oldenburg                                                   
-   Germany                                                             
- www  : http://www.offis.de/                                           
- phone: +49 (441) 9722-230                                             
- fax  : +49 (441) 9722-128                                             
-
 # OFFIS SimLink: Open Virtual Platform - Matlab/Simulink co-simulation
 
 # Introduction
@@ -92,3 +61,36 @@ Calling “offisVP.exe” in the directory “OVP” will initialize the example
 # Acknowledgements
 
 OFFIS acknowledges the support by the 7th Framework Program ICT-4-5.1 for Personal Health Systems of the European Community (grant agreement: 248261) for the [Nephron+](https://nephronplus.eu/) project for which the OfisSimLink peripheral was implemented. In the same context OFFIS has to recognize the willingness of [Imperas](https://www.imperas.com) to provide the OVPsim environment under a research license.
+
+# Copyright
+
+Copyright (c) 2010     OFFIS Institute for Information Technology,     
+                       26121 Oldenburg, Germany                        
+                                                                       
+All rights reserved.                                                   
+                                                                       
+This file is directly or indirectly part of the OFFIS Virtual Platform.
+A simualtion of an ARM7tdmi micro processor with OVP (a), FreeRTOS     
+operating system (b) and user defined tasks.                           
+                                                                       
+(a) http://www.ovpworld.org/                                           
+(b) http://www.freertos.org/                                           
+                                                                       
+Created for the European projects: Nephron+ (1)                        
+                                                                       
+1) http://www.nephronplus.eu/                                          
+                                                                       
+A list of authors and contributors can be found in the accompanying    
+AUTHORS file.  For detailed copyright information, please refer        
+to the COPYING file.                                                   
+                                                                       
+Contact information:                                                   
+ OFFIS                                                                 
+   Institute for Information Technology                                
+ Dipl.-Inform. Frank Poppen                                            
+   Escherweg 2                                                         
+   D-26121 Oldenburg                                                   
+   Germany                                                             
+ www  : http://www.offis.de/                                           
+ phone: +49 (441) 9722-230                                             
+ fax  : +49 (441) 9722-128      
