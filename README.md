@@ -38,8 +38,6 @@ http://system-synthesis.org/offissimlink
 For ease of reading we suggest you refer to that page to have also some 
 additional figures included.
 
-#########################################################################
-
 ====== OFFIS SimLink: Open Virtual Platform - Matlab/Simulink co-simulation ======
 
 ===== Introduction =====
